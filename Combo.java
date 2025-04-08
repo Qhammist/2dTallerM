@@ -7,7 +7,7 @@ import java.util.List;
 public class Combo extends MenuItem {
     private String nombre;
     private List<MenuItem> items;
-
+//Look at me! This is  the Constructor method.
     public Combo(String nombre) {
         this.nombre = nombre;
         this.items = new ArrayList<>();
@@ -25,7 +25,7 @@ public class Combo extends MenuItem {
         }
         return total;
     }
-    
+    //This won't affect the code, will it?
     @Override
     public void mostrar() {
         System.out.println("Combo: " + nombre);
@@ -34,7 +34,7 @@ public class Combo extends MenuItem {
         }
         System.out.println("Precio total del combo: $" + getPrecio());
     }
-    
+//This is a comentary. thx so much.    
     @Override
     public MenuItem clonar() {
         Combo comboClonado = new Combo(this.nombre);
